@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المتجر — BlancoDev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">
+      <svg width="28" height="28" viewBox="0 0 30 30"><path d="M15 1 L28 6 V15 C28 22 22 27 15 29 C8 27 2 22 2 15 V6 Z" fill="#182A4A" stroke="#D4AF37" stroke-width="1.4"/><text x="15" y="20.5" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#F4F6FB" text-anchor="middle">B</text></svg>
+      BlancoDev
+    </div>
+    <div class="navlinks">
+      <a href="services.html" data-i18n="nav1">الخدمات</a>
+      <a href="store.html" data-i18n="nav2">المتجر</a>
+      <a href="work.html" data-i18n="nav3">أعمالي</a>
+      <a href="about.html" data-i18n="nav4">من أنا</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <a href="contact.html" class="nav-cta" data-i18n="navCta">تواصل معي</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section" style="padding-top:60px;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="catEyebrow">المتجر</span>
+      <h2 data-i18n="catTitle">سكربتات جاهزة للبيع</h2>
+      <p data-i18n="catDesc">أنظمة مبرمجة مسبقًا بمجالات مختلفة — جاهزة للتسليم السريع بدون انتظار برمجة من الصفر.</p>
+    </div>
+
+    <div class="catalog-grid">
+      <div class="cat-item reveal"><div><h4 data-i18n="c1n">نظام حفظ بيانات</h4><p data-i18n="c1d">يحفظ تقدّم اللاعب تلقائيًا (DataStore)</p></div><div class="cat-price">$10</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c2n">متجر داخل اللعبة</h4><p data-i18n="c2d">واجهة شراء وبيع كاملة (Shop GUI)</p></div><div class="cat-price">$15</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c3n">لوحة صدارة</h4><p data-i18n="c3d">ترتيب اللاعبين تلقائيًا (Leaderboard)</p></div><div class="cat-price">$8</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c4n">أوامر إدارية</h4><p data-i18n="c4d">تحكم كامل بالسيرفر (Admin Commands)</p></div><div class="cat-price">$12</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c5n">حوار NPC</h4><p data-i18n="c5d">محادثة تفاعلية بمراحل متعددة</p></div><div class="cat-price">$10</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c6n">تأثيرات حركة</h4><p data-i18n="c6d">سرعة، قفزة مزدوجة، سباحة سلسة</p></div><div class="cat-price">$6</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c7n">نظام قتال أساسي</h4><p data-i18n="c7d">صحة، ضرر، وواجهة عرضهم</p></div><div class="cat-price">$15</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c8n">جائزة يومية</h4><p data-i18n="c8d">مكافأة تلقائية عند الدخول اليومي</p></div><div class="cat-price">$8</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c9n">حماية أساسية</h4><p data-i18n="c9d">فحص الطلبات المشبوهة (Anti-Exploit)</p></div><div class="cat-price">$12</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c10n">نظام انتقال</h4><p data-i18n="c10d">تنقّل بين مناطق اللعبة (Teleport)</p></div><div class="cat-price">$6</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c11n">نظام كرافتنق</h4><p data-i18n="c11d">دمج عناصر لصناعة أدوات جديدة</p></div><div class="cat-price">$14</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c12n">نظام Quests</h4><p data-i18n="c12d">مهام يومية مع مكافآت تلقائية</p></div><div class="cat-price">$14</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c13n">نظام Trading</h4><p data-i18n="c13d">تبادل عناصر آمن بين لاعبين</p></div><div class="cat-price">$16</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c14n">قالب موقع شخصي</h4><p data-i18n="c14d">صفحة تعريفية جاهزة بتصميم نظيف</p></div><div class="cat-price">$12</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c15n">نموذج تواصل لموقع</h4><p data-i18n="c15d">فورم يرسل الرسائل لإيميلك مباشرة</p></div><div class="cat-price">$8</div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="c16n">لوحة إدارة بسيطة</h4><p data-i18n="c16d">صفحة تحكم بسيطة لعرض وتعديل بيانات</p></div><div class="cat-price">$18</div></div>
+
+      <div class="cat-custom reveal">
+        <h4 data-i18n="customTitle">ما لقيت اللي تحتاجه؟</h4>
+        <p data-i18n="customDesc">اطلب سكربت مخصص لفكرتك الخاصة، ونتفق على السعر حسب حجم المهمة.</p>
+        <a href="contact.html" class="btn-primary" data-i18n="customBtn">اطلب شي مخصص</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>BlancoDev © 2026</div>
+    <div>Roblox Lua Development</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

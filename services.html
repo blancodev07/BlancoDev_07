@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الخدمات — BlancoDev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">
+      <svg width="28" height="28" viewBox="0 0 30 30"><path d="M15 1 L28 6 V15 C28 22 22 27 15 29 C8 27 2 22 2 15 V6 Z" fill="#182A4A" stroke="#D4AF37" stroke-width="1.4"/><text x="15" y="20.5" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#F4F6FB" text-anchor="middle">B</text></svg>
+      BlancoDev
+    </div>
+    <div class="navlinks">
+      <a href="services.html" data-i18n="nav1">الخدمات</a>
+      <a href="store.html" data-i18n="nav2">المتجر</a>
+      <a href="work.html" data-i18n="nav3">أعمالي</a>
+      <a href="about.html" data-i18n="nav4">من أنا</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <a href="contact.html" class="nav-cta" data-i18n="navCta">تواصل معي</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section" style="padding-top:60px;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="svcEyebrow">الخدمات</span>
+      <h2 data-i18n="svcTitle">ثلاث مستويات، حسب عمق المهمة</h2>
+      <p data-i18n="svcDesc">مو باقات جاهزة بلا معنى — كل مستوى يمثل نوع المهمة فعليًا، من إصلاح صغير إلى نظام متكامل.</p>
+    </div>
+
+    <div class="tiers">
+      <div class="tier reveal">
+        <div class="num mono">TIER I</div>
+        <h3 data-i18n="t1name">إصلاح وتعديل</h3>
+        <div class="price">$5<span data-i18n="perTask">/ مهمة</span></div>
+        <ul>
+          <li data-i18n="t1a">إصلاح خطأ واحد محدد في سكربت</li>
+          <li data-i18n="t1b">تعديل بسيط على منطق موجود</li>
+          <li data-i18n="t1c">تسليم من 24 ساعة</li>
+        </ul>
+        <a href="contact.html" class="pick" data-i18n="pickBtn">اطلب هذا المستوى</a>
+      </div>
+
+      <div class="tier featured reveal">
+        <div class="num mono">TIER II</div>
+        <h3 data-i18n="t2name">بناء نظام</h3>
+        <div class="price">$25<span data-i18n="perSystem">/ نظام</span></div>
+        <ul>
+          <li data-i18n="t2a">نظام كامل (حوار، متجر، حفظ..)</li>
+          <li data-i18n="t2b">هيكلة نظيفة قابلة للتوسع</li>
+          <li data-i18n="t2c">شرح مكان كل سكربت بالتفصيل</li>
+        </ul>
+        <a href="contact.html" class="pick" data-i18n="pickBtn">اطلب هذا المستوى</a>
+      </div>
+
+      <div class="tier reveal">
+        <div class="num mono">TIER III</div>
+        <h3 data-i18n="t3name">مشروع متكامل</h3>
+        <div class="price">$50<span data-i18n="perProject">+ / مشروع</span></div>
+        <ul>
+          <li data-i18n="t3a">عدة أنظمة مرتبطة ببعض</li>
+          <li data-i18n="t3b">تخطيط Architecture قبل الكود</li>
+          <li data-i18n="t3c">متابعة ومراجعة بعد التسليم</li>
+        </ul>
+        <a href="contact.html" class="pick" data-i18n="pickBtn">اطلب هذا المستوى</a>
+      </div>
+    </div>
+
+    <div class="tier-note reveal" data-i18n="tierNote">
+      <strong>ملاحظة:</strong> كل ما رفعت المستوى، صار التنفيذ أشمل وأكثر احترافية. نقدر حتى نبني معك ماب كامل — بس تخصصي الأساسي هو البرمجة (Lua)، والتصميم البصري نتفق عليه بشكل خاص حسب حالة المشروع.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>BlancoDev © 2026</div>
+    <div>Roblox Lua Development</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

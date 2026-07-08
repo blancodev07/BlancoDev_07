@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل معي — BlancoDev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">
+      <svg width="28" height="28" viewBox="0 0 30 30"><path d="M15 1 L28 6 V15 C28 22 22 27 15 29 C8 27 2 22 2 15 V6 Z" fill="#182A4A" stroke="#D4AF37" stroke-width="1.4"/><text x="15" y="20.5" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#F4F6FB" text-anchor="middle">B</text></svg>
+      BlancoDev
+    </div>
+    <div class="navlinks">
+      <a href="services.html" data-i18n="nav1">الخدمات</a>
+      <a href="store.html" data-i18n="nav2">المتجر</a>
+      <a href="work.html" data-i18n="nav3">أعمالي</a>
+      <a href="about.html" data-i18n="nav4">من أنا</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <a href="contact.html" class="nav-cta" data-i18n="navCta">تواصل معي</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section" style="padding-top:60px;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="contactEyebrow">تواصل معي</span>
+      <h2 data-i18n="contactTitle">عندك مهمة؟ يلا نبدأ</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-box reveal">
+        <h2 data-i18n="contactBoxTitle">تواصل مباشر</h2>
+        <p data-i18n="contactBoxDesc">راسلني على الإيميل، وأرد عليك خلال 24–48 ساعة.</p>
+        <div class="email-pill">
+          <span id="emailText">blancodev7@gmail.com</span>
+          <button onclick="copyEmail()" id="copyBtn" data-i18n="copyBtn">نسخ الإيميل</button>
+        </div>
+      </div>
+
+      <div class="form-box reveal">
+        <h3 data-i18n="formTitle">أو عبّي طلبك هنا</h3>
+        <form id="orderForm">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <label data-i18n="formName">اسمك</label>
+          <input type="text" name="name" required>
+          <label data-i18n="formEmail">إيميلك</label>
+          <input type="email" name="email" required>
+          <label data-i18n="formService">وش تحتاج؟</label>
+          <select name="service">
+            <option data-i18n="formOpt1">Tier I — إصلاح وتعديل ($5)</option>
+            <option data-i18n="formOpt2">Tier II — بناء نظام ($25)</option>
+            <option data-i18n="formOpt3">Tier III — مشروع متكامل ($50+)</option>
+            <option data-i18n="formOpt4">سكربت جاهز من المتجر</option>
+            <option data-i18n="formOpt5">طلب مخصص</option>
+          </select>
+          <label data-i18n="formMsg">تفاصيل الطلب</label>
+          <textarea name="message" required></textarea>
+          <label data-i18n="formDiscount">كود الخصم (إن وجد)</label>
+          <input type="text" name="discount_code" placeholder="مثال: AHMED10">
+          <button type="submit" data-i18n="formSubmit">إرسال الطلب</button>
+        </form>
+        <div class="form-success" id="formSuccess" data-i18n="formSuccessMsg">تم استلام طلبك! بترد عليك بأقرب وقت.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider wrap">
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="payEyebrow">الدفع</span>
+      <h2 data-i18n="payTitle">ادفع مباشرة عبر PayPal</h2>
+      <p data-i18n="payDesc">اختر مبلغ الفئة اللي اتفقنا عليها بصفحة الخدمات وادفع بأمان — بالدولار، من رصيدك أو بطاقتك.</p>
+    </div>
+    <div class="catalog-grid">
+      <div class="cat-item reveal" style="flex-direction:column;align-items:stretch;gap:10px;">
+        <div><h4 class="mono">TIER I — $5</h4></div>
+        <div id="paypal-5"></div>
+      </div>
+      <div class="cat-item reveal" style="flex-direction:column;align-items:stretch;gap:10px;">
+        <div><h4 class="mono">TIER II — $25</h4></div>
+        <div id="paypal-25"></div>
+      </div>
+      <div class="cat-item reveal" style="flex-direction:column;align-items:stretch;gap:10px;grid-column:1/-1;">
+        <div><h4 class="mono">TIER III — $50+</h4></div>
+        <div id="paypal-50"></div>
+      </div>
+    </div>
+    <div class="tier-note reveal" data-i18n="payNote">بعد الدفع، تواصل معي عبر الإيميل وأرفق تفاصيل طلبك — الدفع لا يرسل التفاصيل تلقائيًا.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>BlancoDev © 2026</div>
+    <div>Roblox Lua Development</div>
+  </div>
+</footer>
+
+<!--
+  Tawk.to Live Chat — معطّل مؤقتًا لين ينشر الموقع ويصير عندك رابط حقيقي.
+  لما يصير عندك حساب Tawk.to (من موقع tawk.to، زر Get Code):
+  1) احذف سطر البداية وسطر النهاية اللي يحيطون بهذا الكود.
+  2) استبدل PROPERTY_ID و WIDGET_ID بالقيم الحقيقية من حسابك.
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/PROPERTY_ID/WIDGET_ID';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+-->
+
+<!-- PayPal — استبدل client-id=test بمعرّفك الحقيقي من developer.paypal.com/dashboard/applications -->
+<script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+<script src="script.js"></script>
+</body>
+</html>
