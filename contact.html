@@ -74,32 +74,6 @@
   </div>
 </section>
 
-<hr class="divider wrap">
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="payEyebrow">الدفع</span>
-      <h2 data-i18n="payTitle">ادفع مباشرة عبر PayPal</h2>
-      <p data-i18n="payDesc">اختر مبلغ الفئة اللي اتفقنا عليها بصفحة الخدمات وادفع بأمان — بالدولار، من رصيدك أو بطاقتك.</p>
-    </div>
-    <div class="catalog-grid">
-      <div class="cat-item reveal" style="flex-direction:column;align-items:stretch;gap:10px;">
-        <div><h4 class="mono">TIER I — $5</h4></div>
-        <div id="paypal-5"></div>
-      </div>
-      <div class="cat-item reveal" style="flex-direction:column;align-items:stretch;gap:10px;">
-        <div><h4 class="mono">TIER II — $25</h4></div>
-        <div id="paypal-25"></div>
-      </div>
-      <div class="cat-item reveal" style="flex-direction:column;align-items:stretch;gap:10px;grid-column:1/-1;">
-        <div><h4 class="mono">TIER III — $50+</h4></div>
-        <div id="paypal-50"></div>
-      </div>
-    </div>
-    <div class="tier-note reveal" data-i18n="payNote">بعد الدفع، تواصل معي عبر الإيميل وأرفق تفاصيل طلبك — الدفع لا يرسل التفاصيل تلقائيًا.</div>
-  </div>
-</section>
 
 <footer>
   <div class="wrap">
@@ -125,14 +99,7 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
--->
 
-<!-- PayPal — استبدل client-id=test بمعرّفك الحقيقي من developer.paypal.com/dashboard/applications -->
-<script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
-<script src="script.js"></script>
-</body>
-</html>
-<!-- ... أكواد الصفحة الخاصة بك ... -->
 
     <!-- ضع كود Tawk.to هنا في أسفل كل صفحة -->
     <!--Start of Tawk.to Script-->
@@ -151,3 +118,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 </body>
 </html>
+<div class="tier-note reveal">
+  لا يتم الدفع مباشرة عبر الموقع.
+  بعد استلام طلبك سأراجع التفاصيل ثم أرسل لك فاتورة الدفع عبر البريد الإلكتروني أو الدردشة.
+</div>
