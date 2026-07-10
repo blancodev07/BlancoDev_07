@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlancoDev — برمجة وتصميم</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">
+      <svg width="28" height="28" viewBox="0 0 30 30"><path d="M15 1 L28 6 V15 C28 22 22 27 15 29 C8 27 2 22 2 15 V6 Z" fill="#182A4A" stroke="#D4AF37" stroke-width="1.4"/><text x="15" y="20.5" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#F4F6FB" text-anchor="middle">B</text></svg>
+      BlancoDev
+    </div>
+    <div class="navlinks">
+      <a href="services.html" data-i18n="nav1">الخدمات</a>
+      <a href="store.html" data-i18n="nav2">المتجر</a>
+      <a href="work.html" data-i18n="nav3">أعمالي</a>
+      <a href="about.html" data-i18n="nav4">من أنا</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <a href="contact.html" class="nav-cta" data-i18n="navCta">تواصل معي</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">ROBLOX LUA DEVELOPMENT</span>
+      <h1 id="heroTitle">أحوّل فكرتك<br>إلى <em>نظام يعمل</em><br>داخل Roblox</h1>
+      <p class="lead" data-i18n="heroLead">برمجة سكربتات Lua نظيفة ومنظمة لألعاب Roblox — من إصلاح خطأ واحد إلى بناء نظام لعب كامل، بأسعار واضحة من البداية.</p>
+      <div class="cta-row">
+        <a href="contact.html" class="btn-primary" data-i18n="heroCta1">اطلب خدمة</a>
+        <a href="work.html" class="btn-ghost" data-i18n="heroCta2">شوف أعمالي</a>
+      </div>
+    </div>
+
+    <div class="editor facet reveal">
+      <div class="editor-bar"><span></span><span></span><span></span><div class="fname">PlayerData.lua</div></div>
+      <div class="editor-body" id="codeBlock"><span class="ln">1</span><span class="c-com">-- حفظ بيانات اللاعب تلقائيًا</span>
+<span class="ln">2</span><span class="c-kw">local</span> <span class="c-var">DataStore</span> = <span class="c-fn">game</span>:<span class="c-fn">GetService</span>(<span class="c-str">"DataStoreService"</span>)
+<span class="ln">3</span>
+<span class="ln">4</span><span class="c-kw">local function</span> <span class="c-fn">savePlayer</span>(<span class="c-var">player</span>)
+<span class="ln">5</span>    <span class="c-var">store</span>:<span class="c-fn">SetAsync</span>(<span class="c-var">player</span>.<span class="c-var">UserId</span>, <span class="c-var">player</span>.<span class="c-var">data</span>)
+<span class="ln">6</span>    <span class="c-fn">print</span>(<span class="c-var">player</span>.<span class="c-var">Name</span> .. <span class="c-str">" → Saved ✓"</span>)
+<span class="ln">7</span><span class="c-kw">end</span><span class="cursor"></span></div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="fields" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="fieldsEyebrow">المجالات</span>
+      <h2 data-i18n="fieldsTitle">مو بس Roblox — نطاق أوسع من الخدمات</h2>
+      <p data-i18n="fieldsDesc">نفس مبدأ التسعير بصفحة الخدمات يطبّق على كل المجالات التالية.</p>
+    </div>
+    <div class="catalog-grid">
+      <div class="cat-item reveal"><div><h4 data-i18n="f1n">سكربتات Roblox</h4><p data-i18n="f1d">Lua، أنظمة لعب، إصلاح أخطاء</p></div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="f2n">أكواد مواقع</h4><p data-i18n="f2d">HTML, CSS, JavaScript — صفحات وأدوات</p></div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="f3n">بحوث Word</h4><p data-i18n="f3d">بحوث مدرسية منسقة واحترافية</p></div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="f4n">عروض PowerPoint</h4><p data-i18n="f4d">تصميم شرائح احترافي لأي موضوع</p></div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="f5n">إصلاح أخطاء الماب</h4><p data-i18n="f5d">أرسل ملف Roblox Studio، وأرجعه مصلّحًا</p></div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="f6n">نظام كامل على ماپك</h4><p data-i18n="f6d">تبعتلي ملف الماب، وأبرمج فيه نظام كامل</p></div></div>
+      <div class="cat-item reveal"><div><h4 data-i18n="f7n">تصميم لوجو وصور</h4><p data-i18n="f7d">شعار أو صور بسيطة تعكس هوية مشروعك</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>BlancoDev © 2026</div>
+    <div>Roblox Lua Development</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a4d74c0751e041d46cbdc67/1jsv904ch';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
