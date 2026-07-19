@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تواصل معي — BlancoDev</title>
+<title>تواصل معي — Kiro Inverse</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -13,8 +13,14 @@
 <nav>
   <div class="wrap">
     <a href="index.html" class="brand">
-      <svg width="28" height="28" viewBox="0 0 30 30"><path d="M15 1 L28 6 V15 C28 22 22 27 15 29 C8 27 2 22 2 15 V6 Z" fill="#182A4A" stroke="#D4AF37" stroke-width="1.4"/><text x="15" y="20.5" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#F4F6FB" text-anchor="middle">B</text></svg>
-      BlancoDev
+      <svg width="28" height="28" viewBox="0 0 64 64">
+        <circle cx="46" cy="9" r="4" fill="#EA6A17"/>
+        <rect x="14" y="18" width="36" height="32" rx="9" fill="#181818"/>
+        <ellipse cx="27" cy="31" rx="5" ry="4" fill="#EA6A17"/>
+        <ellipse cx="37" cy="31" rx="5" ry="4" fill="#EA6A17"/>
+        <path d="M23 40 Q32 47 41 40" stroke="#F4F6FB" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+      Kiro Inverse
     </a>
     <div class="navlinks">
       <a href="services.html" data-i18n="nav1">الخدمات</a>
@@ -25,6 +31,7 @@
     <div class="nav-right">
       <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
       <a href="contact.html" class="nav-cta" data-i18n="navCta">تواصل معي</a>
+      <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
     </div>
   </div>
 </nav>
@@ -44,6 +51,7 @@
           <span id="emailText">blancodev7@gmail.com</span>
           <button onclick="copyEmail()" id="copyBtn" data-i18n="copyBtn">نسخ الإيميل</button>
         </div>
+        <div class="trust-note">🔒 <span data-i18n="trustNote">الدفع بالاتفاق معي عبر الشات — رابط Payoneer آمن</span></div>
       </div>
 
       <div class="form-box reveal">
@@ -76,7 +84,7 @@
 
 <footer>
   <div class="wrap">
-    <div>BlancoDev © 2026</div>
+    <div>Kiro Inverse — 2026 <span style="opacity:0.7;">· Developed by BlancoDev</span></div>
     <div>Roblox Lua Development</div>
   </div>
 </footer>

@@ -203,4 +203,15 @@ document.querySelectorAll('.tier, .cat-item, .port-card').forEach(el => {
   elementObserver.observe(el);
 });
 
-console.log('🚀 BlancoDev Script Loaded Successfully!');
+function toggleMenu(){
+  const nav = document.querySelector('.navlinks');
+  if (nav) nav.classList.toggle('open');
+}
+document.querySelectorAll('.navlinks a').forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.querySelector('.navlinks');
+    if (nav) nav.classList.remove('open');
+  });
+});
+
+console.log('🚀 Kiro Inverse Script Loaded Successfully!');
